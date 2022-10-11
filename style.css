@@ -1,42 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter Tight', sans-serif;
     
 }
 
-.container{
-    opacity: 0;
-    background-color: aqua;
-    width: 70%;
-    height: 100%;
-    margin: auto;
-    
-}
-
-.controle > p{
-    border-top: 2px solid #0143A3;
-    padding: 20px;
-}
-
-.container > div > img{
-    width: 100%;
-    object-fit:contain;
-}
-.container > div{
-    width: 30%;
-    height: 40%;
-    
+header{
+    height: 330px;
+    text-align: center;
+    background-color: #093A93;
 }
 
 .console{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: 80vh; 
+}
+
+
+
+.info > div{
+    width: 20%;
+    border-top: 4px solid black;
+    padding: 10px;
+}
+
+.info > div > p{
+    text-align: justify;
+}
+
+.info{
     height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     
-    
-    
+}
+
+#lilas{
+    border-color: violet;
+}
+
+#verde{
+    border-color: rgba(29, 199, 29, 0.89);
+}
+
+#vermelho{
+    border-color: rgba(255, 0, 0, 0.774);
+}
+
+#azul{
+    border-color: #0143A3;
 }
 
 #img0 > img{
@@ -44,10 +61,7 @@
     width: 100%;
 }
 #img0{
-    
     width: 32%;
-    
-    
 }
 
 #compra{
@@ -68,9 +82,16 @@
     align-items: flex-end;
     background-attachment: fixed;
 }
+
+.imagem > p{font-weight: bolder;}
 #imagem-0{
     background-image: url('imagens/fundo01.jpg');
-    
+    background-size: cover;
+    height: 80vh;
+}
+
+#imagem-1{
+    background-image: url('imagens/amostra.jpg');
     background-size: cover;
     height: 80vh;
 }
@@ -84,15 +105,29 @@
     margin: 20px 20px;
     text-align: justify;
 }
+
+.meio{
+    justify-content: center;
+    align-items: center;
+}
+
 #btn{
     width: 100%;
     padding: 10px;
     margin-top: 20px;
     font-size: 20px;
-    border: 1px solid black;
-    color: #0143A3;
-    background-color: transparent;
+    border: none;
+    background-color: #0143A3;
+    color: white;
     font-weight: bolder;
     border-radius: 6px;
+    transition: 0.2s;
+}
+
+#btn:hover{
+    background-color: white;
+    color: #0143A3;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
